@@ -13,4 +13,15 @@ TEL:${phoneNumber}
 ADR:${address}
 END:VCARD`;
 
-    // Hiển thị thông tin đã đăng k
+    // Hiển thị thông tin đã đăng ký và liên kết tải vCard
+    document.getElementById('infoFullName').textContent = fullName;
+    document.getElementById('infoPhoneNumber').textContent = phoneNumber;
+    document.getElementById('infoAddress').textContent = address;
+
+    const downloadLink = document.getElementById('downloadLink');
+    const vCardBlob = new Blob([vCardData], { type: 'text/vcard' });
+    downloadLink.href = URL.createObjectURL(vCardBlob);
+
+    document.getElementById('registrationForm').style.display = 'none';
+    document.getElementById('registrationInfo').style.display = 'block';
+});
