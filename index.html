@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký và tải vCard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Đăng ký và tải vCard</h1>
+    <form id="registrationForm">
+        <label for="fullName">Họ và tên:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+        <label for="phoneNumber">Số điện thoại:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        <input type="submit" value="Đăng ký">
+    </form>
+    <div id="registrationInfo" style="display: none;">
+        <h2>Thông tin đã đăng ký:</h2>
+        <p><strong>Họ và tên:</strong> <span id="infoFullName"></span></p>
+        <p><strong>Số điện thoại:</strong> <span id="infoPhoneNumber"></span></p>
+        <p><strong>Địa chỉ:</strong> <span id="infoAddress"></span></p>
+        <h2><a id="downloadLink" href="#" download="contact.vcf">Tải vCard</a></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

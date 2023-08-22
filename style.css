@@ -1,0 +1,49 @@
+/* Định dạng phần tử body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng phần tử container */
+h1, form, #registrationInfo {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Định dạng biểu mẫu đăng ký */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Định dạng nhãn và trường nhập dữ liệu */
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Định dạng nút gửi */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Định dạng liên kết tải vCard */
+a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+}
+
+/* Định dạng liên kết tải vCard khi rê chuột qua */
+a:hover {
+    border-bottom: none;
+}
